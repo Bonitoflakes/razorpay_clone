@@ -35,14 +35,15 @@
 
         <!-- SECONDARY BUTTONS -->
         <div class="navbar-button-wrapper">
+          <!--  -->
           <div class="navbar-country-wrapper">
             <div class="navbar-country-tooltip">
               Razorpay is currently available only for Indian businesses
             </div>
-            <img class="navbar-country-svg" src="/assets/india.svg" alt="INDIA" />
+            <img class="navbar-country-svg" src="/assets/india-flag.svg" alt="INDIA" />
           </div>
 
-          <button class="login-button">Login</button>
+          <button class="login-button">Log In</button>
 
           <button class="signup-button">
             <span class="signup-button-span">
@@ -53,7 +54,89 @@
         </div>
       </nav>
     </div>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+
+    <!-- END OF NAVBAR -->
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- FOLD -->
+      <section>
+        <div class="fold">
+          <!-- FOLD CONTENT -->
+          <div class="fold-content">
+            <h1 class="fold-heading">Power your finance, grow your business</h1>
+            <div class="green-line"></div>
+            <p class="fold-para">
+              Accept payments from customers. Automate payouts to vendors & employees. Never run out of
+              working capital.
+            </p>
+            <button class="fold-button">
+              <span class="fold-button-span">
+                Sign Up Now
+                <img class="fold-arrow" src="/assets/arrow_button.svg" alt="signup arrow"
+              /></span>
+            </button>
+          </div>
+
+          <!-- FOLD IMAGE -->
+          <div class="fold-image-container">
+            <img
+              src="assets/illustration-desktop.4a9233fc.jpg"
+              alt="landing_image"
+              srcset="
+                https://razorpay.com/build/browser/static/illustration-mobile.f8ed734a.jpg  1023w,
+                https://razorpay.com/build/browser/static/illustration-desktop.4a9233fc.jpg 3000w
+              "
+            />
+          </div>
+        </div>
+        <!-- svg design -->
+        <div class="fold-svg-cutout">
+          <img src="/assets/fold-arrow.svg" alt="" width="103%" />
+        </div>
+      </section>
+
+      <!-- PAYMENTS -->
+      <section class="payment">
+        <div class="payment-heading-wrapper">
+          <img class="payment-dots" src="/assets/dot2.png" alt="" srcset="" />
+          <img class="payment-dots-left" src="/assets/dot1.png" alt="" srcset="" />
+          <h1 class="payment-heading">Accept Payments with Razorpay Payment Suite</h1>
+          <div class="green-line"></div>
+        </div>
+        <!-- PAYMENT CARD -->
+
+        <div class="card">
+          <!-- CARD CONTENT -->
+          <div class="card-content-wrapper">
+            <h2 class="card-content__heading">
+              Supercharge your business with the all‑powerful
+              <span class="card-content__heading-span"> Payment Gateway </span>
+            </h2>
+
+            <ul class="card-feature">
+              <li class="card-feature__list">100+ Payment Methods</li>
+              <li class="card-feature__list">Industry Leading Success Rate</li>
+              <li class="card-feature__list">Superior Checkout Experience</li>
+              <li class="card-feature__list">100+ Payment Methods</li>
+              <li class="card-feature__list">100+ Payment Methods</li>
+            </ul>
+
+            <div class="payment-button-wrapper">
+              <button class="payment-button">
+                Sign Up Now
+                <span><img class="fold-arrow" src="/assets/arrow_button.svg" alt="signup arrow" /></span>
+              </button>
+
+              <a class="payment-button-transparent" href="#">Know More &nearrow;</a>
+            </div>
+          </div>
+          <!-- CARD IMAGE -->
+          <div class="card-image-wrapper">
+            <img class="card-image" src="/assets/landing_image.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
