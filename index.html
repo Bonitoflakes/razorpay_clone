@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RazorPay</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="nav-wrapper">
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div>
+          <img class="navbar-logo" src="/assets/logo1.svg" alt="RazorPay Logo" />
+        </div>
+
+        <!-- PRIMARY LINKS -->
+        <div class="navbar-linkwrapper">
+          <a href="#" class="navbar-link"> Payments </a>
+          <a href="#" class="navbar-link"> Banking </a>
+          <a href="#" class="navbar-link"> Line of Credit </a>
+          <a href="#" class="navbar-link"> Payroll </a>
+          <a href="#" class="navbar-link"> Resources </a>
+          <a href="#" class="navbar-link"> Support </a>
+          <a href="#" class="navbar-link"> Pricing </a>
+        </div>
+
+        <!-- SECONDARY BUTTONS -->
+        <div class="navbar-button-wrapper">
+          <div class="navbar-country-wrapper">
+            <div class="navbar-country-tooltip">
+              Razorpay is currently available only for Indian businesses
+            </div>
+            <img class="navbar-country-svg" src="/assets/india.svg" alt="INDIA" />
+          </div>
+
+          <button class="login-button">Login</button>
+
+          <button class="signup-button">
+            <span class="signup-button-span">
+              Sign Up
+              <img class="signup-arrow" src="/assets/arrow_button.svg" alt="signup arrow"
+            /></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

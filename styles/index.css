@@ -1,0 +1,123 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: #02042a;
+  --primary-text-color: #f5f5f5;
+  --button-border: #2b84ea;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 400;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: "Mulish", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-wrapper {
+  background-color: var(--primary-bg-color);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9rem;
+  max-width: 108rem;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+  height: 3rem;
+  width: 12.5rem;
+  filter: invert(88%) sepia(84%) saturate(4819%) hue-rotate(181deg) brightness(123%) contrast(92%);
+  margin-right: 2.2rem;
+}
+
+.navbar-link {
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: var(--primary-text-color);
+  padding: 3.2rem 1.2rem;
+  padding-bottom: 1.6rem;
+}
+
+.navbar-link:hover {
+  color: var(--button-border);
+}
+
+button {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  background-color: var(--primary-bg-color);
+  box-shadow: rgba(0, 0, 0, 0.05) 2px 4px 9px 1px;
+  border: 2px solid var(--button-border);
+  border-radius: 2px;
+  padding: 1.2rem 2rem;
+  outline: none;
+  color: var(--primary-text-color);
+  cursor: pointer;
+  margin-left: 1.6rem;
+}
+
+.navbar-button-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-country-wrapper:hover .navbar-country-tooltip {
+  display: block;
+}
+.navbar-country-tooltip {
+  position: absolute;
+  top: 130%;
+  right: 40%;
+  min-width: 22rem;
+  display: none;
+  color: var(--primary-text-color);
+  padding: 0.8rem;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.navbar-country-svg {
+  align-self: center;
+}
+
+.navbar-buttons {
+  display: flex;
+}
+
+.signup-button {
+  color: var(--button-border);
+  background-color: var(--primary-text-color);
+  border: 2px solid var(--primary-text-color);
+}
+
+.signup-button-span {
+  display: flex;
+  align-items: center;
+}
+
+.signup-arrow {
+  filter: invert(36%) sepia(92%) saturate(1573%) hue-rotate(197deg) brightness(98%) contrast(87%);
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  margin-left: 5px;
+}
+
