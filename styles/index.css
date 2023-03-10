@@ -313,3 +313,97 @@ button {
   fill: var(--green-color);
   margin-right: 2rem;
 }
+
+/* PAYMENT COLLECTION */
+
+.payment-collection {
+  margin: 10rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 108rem;
+  gap: 3.2rem;
+}
+
+.collection-card {
+  clip-path: polygon(73% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
+  border-radius: 4px;
+  width: 339px;
+  height: 225px;
+  position: relative;
+  background: #f0f0f0;
+}
+
+.box-shadow-wrap {
+  display: inline-block;
+  position: relative;
+  transition: all 0.15s ease-out;
+}
+.box-shadow-wrap:hover {
+  filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.14));
+}
+.box-shadow-wrap:hover .collection-card {
+  background-color: white;
+}
+
+.collection-card-inside {
+  position: absolute;
+  border-radius: 4px;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  background: white;
+  clip-path: polygon(73% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
+  padding: 2.4rem 2rem;
+  padding-right: 4.8rem;
+}
+
+.collection-card__heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.collection-card__para {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: hsl(229 10% 55% / 2);
+  margin-top: 2.4rem;
+}
+
+.collection-card__button {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-left: 0;
+  margin-top: 3.2rem;
+}
+
+.collection-card-wave {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+}
+
+.box-shadow-wrap:hover .collection-card-svg {
+  background: linear-gradient(30.55deg, #6ac7ff 11.05%, #148aff 90.09%);
+}
+
+.box-shadow-wrap:hover .collection-card-wave {
+  opacity: 1;
+}
+
+.collection-card-svg {
+  background-color: var(--button-border);
+  border-radius: 100px;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  top: 6px;
+  right: 12px;
+}
+
+.collection-card-svg__outer {
+  width: 100%;
+}
