@@ -142,7 +142,8 @@ button {
   background-color: var(--primary-bg-color);
   padding: 0 14.8rem;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .fold-content {
@@ -151,6 +152,8 @@ button {
   flex-direction: column;
   align-items: flex-start;
   max-width: 40rem;
+  margin-top: calc(6vw + 2rem);
+  margin-right: 2rem;
 }
 
 .fold-heading {
@@ -176,6 +179,13 @@ button {
   margin: 0;
   margin-top: 1.6rem;
   padding: 1.4rem 1.8rem;
+}
+.fold-image-container {
+  max-width: 70rem;
+}
+
+.fold-image {
+  width: 100%;
 }
 
 .fold-button-span {
