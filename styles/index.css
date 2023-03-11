@@ -410,10 +410,11 @@ button {
 /* BUSINESS BANKING  */
 .business-banking {
   background: url(/assets/x-dark-bg.0bc3bc00.svg);
-  padding: 25rem 0;
+  padding-top: 25rem;
   padding-bottom: 50rem;
   background-position: -400px;
   background-repeat: no-repeat;
+  background-size: 200% 100%;
 }
 .business-banking-wrapper {
   /* padding: 0 32rem; */
@@ -676,4 +677,70 @@ button {
 
 .payment {
   position: relative;
+}
+
+.product {
+  max-width: 108rem;
+  margin: 0 auto;
+}
+
+.product-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.card__text {
+  align-self: center;
+}
+
+.product__card {
+  padding: 4rem;
+  box-shadow: 2px 4px 9px 1px hsla(0, 0%, 0%, 0.05);
+  transition: all ease-in-out 0.21s;
+  cursor: pointer;
+  background-image: url(/assets/instant-settlements-bg.b4569475.svg);
+  background-repeat: no-repeat;
+}
+
+.product__card:hover {
+  transform: scale(1.05);
+  background: url(/assets/instant-settlements-hover.a27f0c91.svg);
+  background-repeat: no-repeat;
+}
+
+.product__card-svg {
+  background-color: var(--button-border);
+  border-radius: 100px;
+  width: 4rem;
+  height: 4rem;
+}
+
+.product__title {
+  font-size: 4rem;
+  line-height: 5.4rem;
+  font-weight: 700;
+}
+
+.product__title-blue {
+  color: var(--button-border);
+}
+
+.product__card-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 2.1rem;
+  padding-top: 1.6rem;
+}
+
+.product__card-para {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 1.2rem 0;
+}
+
+.product__card-btn {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--button-border);
 }
