@@ -64,7 +64,7 @@ li {
   color: var(--button-border);
 }
 
-/* button {
+.button {
   font-size: 1.4rem;
   line-height: 1.6rem;
   background-color: var(--primary-bg-color);
@@ -76,7 +76,7 @@ li {
   color: var(--primary-text-color);
   cursor: pointer;
   margin-left: 1.6rem;
-} */
+}
 
 .navbar-button-wrapper {
   /* display: flex;
@@ -941,9 +941,18 @@ li {
   padding: 3.2rem 0;
 }
 
+.frame-carousel{
+  display: flex;
+  flex-direction: column;
+}
+
 .main-frame {
   display: flex;
   gap: 8rem;
+}
+
+.main-frame-hidden{
+  display: none;
 }
 
 .main-frame__content{
