@@ -974,6 +974,7 @@ li {
   width: 900px;
   height: 320px;
   align-items: center;
+  overflow: hidden;
 }
 
 .main-frame {
@@ -986,23 +987,26 @@ li {
 }
 
 .main-frame--zero {
-  opacity: 0;
-}
-
-.main-frame-hidden {
-  display: none;
+  display: flex;
+  gap: 8rem;
+  position: absolute;
+  width: 900px;
+  height: 320px;
+  transition: all 1s ease;
+  padding: 1rem;
+  /* opacity: 0; */
+  /* visibility: hidden; */
 }
 
 .main-frame__content {
-  max-width: 50rem;
+  max-width: 38rem;
   padding: 3.2rem 0;
-  padding-left: 8rem;
+  /* padding-left: 8rem; */
 }
 
 .main-frame__img-container {
   width: 32rem;
   height: 32rem;
-  flex: 1;
 }
 
 .main-frame-img {
