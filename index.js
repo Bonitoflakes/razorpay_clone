@@ -19,9 +19,11 @@ for (const [idx, slide] of slides.entries()) {
   // If the current Index is equal to the slide Index, make it active.
   if (idx === curSlide) {
     slide.className = "main-frame";
+    slide.ariaHidden = false;
     dot.classList.add("dot-active");
   } else {
     slide.className = "main-frame--zero";
+    slide.ariaHidden = true;
   }
 
   // Translate every slide based on its index and set their inital position.
@@ -41,7 +43,6 @@ dotsContainer.addEventListener("click", (event) => {
 // Create a global scoped variable in memory of all dots to prevent fetching them everytime.
 let dot = document.querySelectorAll(".dot");
 dot = [...dot];
-
 
 const goToSlide = (newSlide, currSlide) => {
   if (newSlide === currSlide) return;
@@ -79,14 +80,14 @@ function showArrow() {
 }
 
 function applyStylesBasedOnIndex() {
-
-
   slides.forEach((slide, idx) => {
     if (idx === curSlide) {
       slide.className = "main-frame";
+      slide.ariaHidden = false;
       dot[idx].classList.add("dot-active");
     } else {
       slide.className = "main-frame--zero";
+      slide.ariaHidden = true;
       dot[idx].classList.remove("dot-active");
     }
 
