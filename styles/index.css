@@ -64,7 +64,7 @@ li {
   color: var(--button-border);
 }
 
-button {
+/* button {
   font-size: 1.4rem;
   line-height: 1.6rem;
   background-color: var(--primary-bg-color);
@@ -76,7 +76,7 @@ button {
   color: var(--primary-text-color);
   cursor: pointer;
   margin-left: 1.6rem;
-}
+} */
 
 .navbar-button-wrapper {
   /* display: flex;
@@ -908,4 +908,111 @@ button {
 .cta {
   position: relative;
   overflow-x: hidden;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+.carousel-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.carousel-container {
+    /* max-width: 108rem; */
+  margin: auto;
+  /* background-color: #61cea6; */
+}
+
+.carousel-text {
+  font-size: 2.4rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.frame {
+  display: flex;
+  gap: 5rem;
+  padding: 3.2rem 0;
+}
+
+.main-frame {
+  display: flex;
+  gap: 8rem;
+}
+
+.main-frame__content{
+  max-width: 50rem;
+  padding: 3.2rem 0;
+  padding-left: 8rem;
+}
+
+.main-frame__img-container {
+  width: 32rem;
+  height: 32rem;
+  flex: 1;
+}
+
+.main-frame-img {
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.left-arrow {
+  height: 9.6rem;
+}
+
+.right {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.right-arrow {
+  height: 9.6rem;
+}
+
+.main-frame-heading {
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 4.5rem;
+}
+
+.main-frame-user {
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 2.88rem;
+}
+
+.main-frame-role {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+}
+
+.main-frame-link {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+  text-decoration: underline;
+  font-style: italic;
+  color: black;
+  
+}
+
+.main-frame-company {
+  height: 4rem;
 }
