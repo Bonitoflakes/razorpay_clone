@@ -317,7 +317,7 @@ li {
 /* PAYMENT COLLECTION */
 
 .payment-collection {
-  margin: 10rem auto 0 auto;
+  margin: 10rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 108rem;
@@ -420,6 +420,24 @@ li {
 .business-banking-wrapper {
   /* padding: 0 32rem; */
   /* padding-top: 10rem; */
+  position: relative;
+}
+
+.x-flame-1 {
+  height: 20rem;
+  position: absolute;
+  top: -3.5rem;
+  left: 3.6rem;
+  transform: rotate(373deg);
+}
+
+.x-flame-2 {
+  height: 23rem;
+  width: 17rem;
+  position: absolute;
+  top: 24rem;
+  right: 0.6rem;
+  transform: rotate(365deg);
 }
 
 .business-heading {
@@ -516,10 +534,11 @@ li {
 .demo-wrapper {
   border: 1px solid rgb(82, 90, 118);
   border-radius: 4px;
-  padding: 3.2rem;
+  padding: 3.2rem 0;
   display: flex;
-  margin: 10rem auto 0 auto;
   max-width: 108rem;
+  margin: 6.4rem auto;
+
   align-items: center;
   justify-content: space-around;
 }
@@ -535,6 +554,7 @@ li {
 .features {
   padding: 0 3.2rem;
   margin: 0 auto;
+  padding-bottom: 10rem;
   margin-top: -9rem;
   background: url(/assets/features-bg.61935438.svg) no-repeat;
   background-position: 50% 50%;
@@ -914,6 +934,7 @@ li {
   display: flex;
   align-items: center;
   padding: 10rem 0;
+  overflow: hidden;
 }
 
 .carousel-text-content {
@@ -1054,4 +1075,66 @@ li {
 
 .main-frame-company {
   height: 4rem;
+}
+
+.demo-button {
+  background-color: var(--button-border);
+  font-size: 1.6rem;
+  font-weight: normal;
+  position: relative;
+  padding: 1.6rem 2rem;
+  padding-right: 8rem;
+  border-radius: 0.5rem;
+}
+
+.green-btn {
+  position: absolute;
+  top: -5px;
+  height: 5.8rem;
+  width: 5rem;
+  opacity: 0.9;
+  background-color: var(--green-color);
+  transform: skew(20deg);
+  right: 10%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skewed-arrow {
+  transform: skew(-20deg);
+  width: 2rem;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-dot {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.a1-dots {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10rem;
+  z-index: 100;
+  position: relative;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #aeaeae;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.dot-active {
+  background-color: var(--button-border);
 }
