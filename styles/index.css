@@ -924,7 +924,7 @@ li {
 }
 
 .carousel-container {
-    /* max-width: 108rem; */
+  /* max-width: 108rem; */
   margin: auto;
   /* background-color: #61cea6; */
 }
@@ -939,23 +939,40 @@ li {
   display: flex;
   gap: 5rem;
   padding: 3.2rem 0;
+  position: relative;
 }
 
-.frame-carousel{
+.frame-carousel {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 10rem;
+}
+
+.frame {
+  width: 900px;
+  height: 320px;
+  align-items: center;
 }
 
 .main-frame {
   display: flex;
   gap: 8rem;
+  position: absolute;
+  width: 900px;
+  height: 320px;
+  transition: all 1s ease;
 }
 
-.main-frame-hidden{
+.main-frame--zero {
+  opacity: 0;
+}
+
+.main-frame-hidden {
   display: none;
 }
 
-.main-frame__content{
+.main-frame__content {
   max-width: 50rem;
   padding: 3.2rem 0;
   padding-left: 8rem;
@@ -977,6 +994,7 @@ li {
   border: none;
   background: transparent;
   cursor: pointer;
+  z-index: 10;
 }
 
 .left-arrow {
@@ -988,6 +1006,7 @@ li {
   border: none;
   background: transparent;
   cursor: pointer;
+  z-index: 10;
 }
 
 .right-arrow {
@@ -998,6 +1017,18 @@ li {
   font-size: 3rem;
   font-weight: 200;
   line-height: 4.5rem;
+  position: relative;
+}
+
+.main-frame-heading::before {
+  content: "";
+  height: 4rem;
+  width: 4rem;
+  background: url("/assets/quotes-icon.40f48901.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10%;
 }
 
 .main-frame-user {
@@ -1019,7 +1050,6 @@ li {
   text-decoration: underline;
   font-style: italic;
   color: black;
-  
 }
 
 .main-frame-company {

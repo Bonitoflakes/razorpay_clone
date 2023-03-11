@@ -1,30 +1,42 @@
+// const slides = document.querySelectorAll(".main-frame");
 const slides = document.querySelectorAll(".main-frame");
 const prevBtn = document.querySelector(".left");
 const nextBtn = document.querySelector(".right");
 
-let index = 0;
+let curSlide = 0;
+const slideLength = slides.length - 1;
 
 function hideStuff() {
-  index > 3 ? (index = 0) : null;
-  index < 0 ? (index = 3) : null;
+  curSlide > slideLength ? (curSlide = 0) : null;
+  curSlide < 0 ? (curSlide = slideLength) : null;
   for (const [idx, slide] of slides.entries()) {
     console.log(idx);
-    console.log("Current Index:", index);
-
-    //   console.log(slide);
-    idx == index ? (slide.className = "main-frame") : (slide.className = "main-frame-hidden");
+    console.log("Current curSlide:", curSlide);
+    idx == curSlide ? (slide.className = "main-frame") : (slide.className = "main-frame--zero");
+    slide.style.transform = `translateX(${idx * 100}%)`;
   }
 }
 hideStuff();
 
 const runPrev = () => {
-  index--;
-  hideStuff();
+  curSlide--;
+  //   move slide by -100%
+  slides.forEach((slide, idx) => {
+    curSlide > slideLength ? (curSlide = 0) : null;
+  curSlide < 0 ? (curSlide = slideLength) : null;
+    idx == curSlide ? (slide.className = "main-frame") : (slide.className = "main-frame--zero");
+    slide.style.transform = `translateX(${100 * (idx - curSlide)}%)`;
+  });
 };
 
 const runNext = () => {
-  index++;
-  hideStuff();
+  curSlide++;
+  slides.forEach((slide, idx) => {
+    curSlide > slideLength ? (curSlide = 0) : null;
+    curSlide < 0 ? (curSlide = slideLength) : null;
+    idx == curSlide ? (slide.className = "main-frame") : (slide.className = "main-frame--zero");
+    slide.style.transform = `translateX(${100 * (idx - curSlide)}%)`;
+  });
 };
 
 prevBtn.addEventListener("click", runPrev);
