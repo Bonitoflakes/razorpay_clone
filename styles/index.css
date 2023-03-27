@@ -39,7 +39,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 9rem;
+  /* height: 9rem; */
+  padding: 2rem 0;
   max-width: 108rem;
   margin: 0 auto;
 }
@@ -139,12 +140,15 @@ li {
   margin: 1.6rem 0;
 }
 
+.fold-wrapper {
+  background-color: var(--primary-bg-color);
+  display: flex;
+  max-width: 108rem;
+  margin: auto;
+}
 .fold {
   background-color: var(--primary-bg-color);
-  padding: 0 14.8rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  /* padding: 0 14.8rem; */
 }
 
 .fold-content {
@@ -247,6 +251,7 @@ li {
   max-width: 108rem;
   margin: 0 auto;
   background-color: white;
+  border: 1px solid rgb(212, 212, 212);
 }
 
 .card-content-wrapper {
@@ -327,7 +332,7 @@ li {
 .collection-card {
   clip-path: polygon(73% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
   border-radius: 4px;
-  width: 339px;
+  /* width: 339px; */
   height: 225px;
   position: relative;
   background: #f0f0f0;
@@ -339,7 +344,7 @@ li {
   transition: all 0.15s ease-out;
 }
 .box-shadow-wrap:hover {
-  filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(10px 10px 50px rgba(64, 64, 64, 0.14));
 }
 .box-shadow-wrap:hover .collection-card {
   background-color: white;
