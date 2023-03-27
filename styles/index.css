@@ -451,7 +451,7 @@ li {
 }
 
 .banking-card {
-  background-color: transparent;
+  background-color: var(--primary-bg-color);
   border: 1px solid rgb(82, 90, 118);
   border-radius: 8px;
 }
